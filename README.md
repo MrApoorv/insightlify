@@ -71,6 +71,24 @@ Run frontend:
 ```bash
 npm start
 ```
+---
+
+### 📊 Analysis Output
+
+When you upload a file (PDF, Image, or TXT) and click **Analyze**, the app extracts the text and provides the following insights:
+
+* **Sentiment** → Overall tone (Positive / Negative / Neutral)
+* **Emotions** → List of detected emotions
+* **Topics** → Key themes discussed in the text
+* **Engagement Score** → 1–10 rating of how engaging the content is
+* **Suggestions** → 3 short improvements to boost engagement
+* **Audience** → Best-fit target audience for the content
+* **Hashtags** → Suggested hashtags for social sharing
+* **Rewrites** → Same content rewritten in:
+
+  * *Friendly* (casual, Instagram-style)
+  * *Professional* (formal, LinkedIn-style)
+  * *Concise* (short, Twitter/X-style)
 
 ---
 
