@@ -97,30 +97,35 @@ When you upload a file (PDF, Image, or TXT) and click **Analyze**, the app extra
 Based on your attached structure image:
 
 ```
-project-root/
-│── backend/
-│   ├── main.py                 # FastAPI entrypoint
-│   ├── api/                    # API routers
-│   │   └── analyzer.py
-│   ├── services/               # Business logic
-│   │   └── analyzer_service.py
-│   ├── utils/                  # File helpers (OCR, PDF parsing)
-│   │   └── file_utils.py
-│   ├── models/                 # AI model integrations
+Insightlify/
+│
+├── backend/                # FastAPI backend
+│   ├── api/                # API routes
+│   │   └── analyzer.py     
+│   ├── models/             # ML/NLP models integration
 │   │   └── model_utils.py
-│   ├── requirements.txt
-│   └── Dockerfile
+│   ├── services/           # Business logic
+│   │   └── analyzer_service.py
+│   ├── utils/              # Helper utilities (file handling, etc.)
+│   │   └── file_utils.py
+│   ├── main.py             # FastAPI entry point
+│   ├── requirements.txt    # Backend dependencies
+│   ├── Dockerfile          # Backend Docker config
+│   └── .env                # Backend environment variables
 │
-│── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   └── Analyzer.jsx    # Upload & analyze component
-│   │   ├── App.js
-│   │   └── index.js
-│   ├── public/
-│   └── package.json
+├── frontend/               # React frontend
+│   ├── public/             # Static assets (favicon, index.html)
+│   ├── src/                # React source code
+│   │   ├── pages/          # Page components
+│   │   ├── App.js          # Main React component
+│   │   ├── App.css         # App styling
+│   │   ├── index.js        # React entry point
+│   │   └── index.css       # Global styles
+│   ├── package.json        # Frontend dependencies
+│   └── .env                # Frontend environment variables
 │
-└── README.md
+└── README.md               # Project documentation
+
 ```
 
 ---
